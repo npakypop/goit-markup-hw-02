@@ -1,10 +1,3 @@
-/* main grey #757575 */
-/* second black  #212121 */
-/* accent blue #2196F3 */
-/* hover text white #ffffff */
-/* background white #FFFFFF */
-/* background dark-grey #2F303A */
-/* footer contacts rgba(255, 255, 255, 0.6); */
 :root {
     --primary-color: #757575;
     --secondary-color: #212121;
@@ -14,6 +7,7 @@
     --footer-cont-color: rgba(255, 255, 255, 0.6);
     --white-color: #FFFFFF;
     --black-color: #000000;
+    --btn-bcg-color: #F5F4FA;
 }
 .list {
     list-style: none;
@@ -22,9 +16,31 @@
     text-decoration: none;
 }
 
+/* Button */
+
+.btn {
+    /* background-color: var(--accent-color);
+    color: var(--white-color); */
+    border: none;
+}
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+.btn-secondary {
+    background-color: var(--btn-bcg-color);
+    color: var(--secondary-color);
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+/* Body */
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: Roboto, Raleway, sans-serif;
     background-color: var(--bcg-pr-color);
     color: var(--primary-color);
 }
@@ -50,7 +66,9 @@ body {
 .nav-link:focus {
     color:var(--accent-color);
 }
-
+.nav-link  .current {
+    color: var(--accent-color);
+}
 /* header contacts */
 
 .header-contact-link {
@@ -65,16 +83,14 @@ body {
 
 .decision-title {
     color: var(--white-color);
+    background-color: var(--bcg-sc-color);
 }
-
 .decision-btn{
     color: var(--white-color);
     background-color: var(--accent-color);
     border: none;
 }
-/* .decision-btn:hover {
-    background-color: var(--accent-color);
-} */
+
 
 /* section specifics */
 
@@ -97,9 +113,13 @@ body {
 
 /* footer */
 
-footer .logo {
+.page-footer {
+    background-color: var(--bcg-sc-color);
+}
+.page-footer .logo {
     color: var(--white-color);
 }
+
 .address {
     color: var(--white-color);
 }
@@ -117,17 +137,6 @@ footer .logo {
 /* Portfolio */
 /* example */
 
-.filter-wrapper .item{
-    background-color: #F5F4FA;
-    color: var(--secondary-color);
-    border: none;
-}
-.filter-wrapper .item:hover,
-.filter-wrapper .item:focus {
-    background-color: var(--accent-color);
-    color: var(--white-color);
-    border: none;
-}
 
 .examples-wrapper .prjct{
     color: var(--secondary-color);
