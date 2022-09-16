@@ -16,13 +16,14 @@
     text-decoration: none;
 }
 
-/* Button */
+/* Buttons styles */
 
 .btn {
     /* background-color: var(--accent-color);
     color: var(--white-color); */
     border: none;
     font-family: inherit;
+    cursor: pointer;
 }
 .btn-primary {
     font-weight: 700;
@@ -178,6 +179,10 @@ body {
     color: var(--white-color);
 }
 
+.footer-contact {
+    font-style: normal;
+}
+
 .address {
     font-weight: 400;
     font-size: 14px;
@@ -198,12 +203,17 @@ body {
 }
 
 /* Portfolio */
-/* example */
-
 
 .examples-wrapper .prjct{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
     color: var(--secondary-color);
 }
 .examples-wrapper .spcfn{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
     color: var(--primary-color);
 }
