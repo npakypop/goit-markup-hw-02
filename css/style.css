@@ -1,0 +1,137 @@
+/* main grey #757575 */
+/* second black  #212121 */
+/* accent blue #2196F3 */
+/* hover text white #ffffff */
+/* background white #FFFFFF */
+/* background dark-grey #2F303A */
+/* footer contacts rgba(255, 255, 255, 0.6); */
+:root {
+    --primary-color: #757575;
+    --secondary-color: #212121;
+    --accent-color: #2196F3;
+    --bcg-pr-color: #FFFFFF;
+    --bcg-sc-color: #2F303A;
+    --footer-cont-color: rgba(255, 255, 255, 0.6);
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--bcg-pr-color);
+    color: var(--primary-color);
+}
+
+.section-title {
+    color: var(--secondary-color);
+}
+
+/* logo */
+.logo {
+    color: var(--black-color);
+}
+.logo-web{
+    color: var(--accent-color);
+}
+
+/* nav-bar */
+
+.nav-link {
+    color: var(--secondary-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+    color:var(--accent-color);
+}
+
+/* header contacts */
+
+.header-contact-link {
+    color: var(--primary-color);
+}
+.header-contact-link:hover,
+.header-contact-link:focus {
+    color: var(--accent-color);
+}
+
+/* section decision */
+
+.decision-title {
+    color: var(--white-color);
+}
+
+.decision-btn{
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border: none;
+}
+/* .decision-btn:hover {
+    background-color: var(--accent-color);
+} */
+
+/* section specifics */
+
+.specifics-wrapper .title {
+    color: var(--secondary-color);
+}
+
+.specifics-wrapper .descr {
+    color: var(--primary-color);
+}
+
+/* section team */
+
+.team-wrapper .name {
+    color: var(--secondary-color);
+}
+.team-wrapper .post {
+    color: var(--primary-color);
+}
+
+/* footer */
+
+footer .logo {
+    color: var(--white-color);
+}
+.address {
+    color: var(--white-color);
+}
+
+.footer-contact-link
+ {
+    color: var(--footer-cont-color);
+}
+.footer-contact-link:hover,
+.footer-contact-link:focus
+ {
+    color: var(--accent-color);
+}
+
+/* Portfolio */
+/* example */
+
+.filter-wrapper .item{
+    background-color: #F5F4FA;
+    color: var(--secondary-color);
+    border: none;
+}
+.filter-wrapper .item:hover,
+.filter-wrapper .item:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border: none;
+}
+
+.examples-wrapper .prjct{
+    color: var(--secondary-color);
+}
+.examples-wrapper .spcfn{
+    color: var(--primary-color);
+}
